@@ -1,1 +1,13 @@
+/* css/base.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-main); /* Sử dụng biến font chữ từ variables.css */
+}
 
+body {
+    color: var(--color-text);
+    background-color: #ffffff;
+    line-height: 1.6;
+}

@@ -1,1 +1,46 @@
+/* css/hero.css */
+.hero {
+    min-height: 100vh; /* Chiều cao bằng 100% màn hình[cite: 6] */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(135deg, var(--color-light) 0%, #e2e8f0 100%);
+    padding: 0 20px;
+}
 
+.hero h1 {
+    font-size: 3.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    color: var(--color-text);
+}
+
+.cta-button {
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px); /* Nổi lên khi trỏ chuột[cite: 6] */
+    box-shadow: 0 10px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* --- Giao diện Điện thoại (Mobile) cho Hero --- */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem; /* Thu nhỏ chữ trên điện thoại[cite: 6] */
+    }
+}
