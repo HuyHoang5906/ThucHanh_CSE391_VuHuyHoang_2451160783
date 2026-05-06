@@ -1,6 +1,5 @@
-/* css/header.css */
 header {
-    position: sticky; /* Giữ header dính trên cùng[cite: 6] */
+    position: sticky; 
     top: 0;
     z-index: 1000;
     background: var(--color-light);
@@ -26,24 +25,24 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--color-primary); /* Hiệu ứng đổi màu khi trỏ chuột[cite: 6] */
+    color: var(--color-primary); 
 }
 
-/* Ẩn nút Hamburger trên giao diện máy tính */
+
 .menu-toggle, .hamburger {
     display: none;
 }
 
-/* --- Giao diện Điện thoại (Mobile) cho Header --- */
+
 @media (max-width: 768px) {
     .hamburger {
-        display: block;
+        display: block; 
         font-size: 1.8rem;
         cursor: pointer;
     }
 
     nav {
-        display: none; /* Ẩn menu mặc định */
+        display: none;
         flex-direction: column;
         position: absolute;
         top: 100%;
@@ -60,7 +59,6 @@ nav a:hover {
         border-bottom: 1px solid #e2e8f0;
     }
 
-    /* Checkbox hack: Hiện menu khi nút Hamburger được bấm[cite: 6] */
     .menu-toggle:checked ~ nav {
         display: flex;
     }
