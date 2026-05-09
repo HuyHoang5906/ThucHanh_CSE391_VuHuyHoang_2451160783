@@ -4,9 +4,9 @@
     box-sizing: border-box;
     font-family: var(--font-main);
 }
-
 body {
     color: var(--color-text);
-    background-color: #ffffff;
+    background-color: #f0f8ff; 
     line-height: 1.6;
+}
 }
