@@ -66,32 +66,25 @@
 .portfolio-item:hover .portfolio-overlay {
     opacity: 1;
 }
-/* ========================================== */
-/* CHẶNG 3: MÀN HÌNH ĐEN (LIGHTBOX) CSS-ONLY */
-/* ========================================== */
-
 .lightbox {
     position: fixed;
-    inset: 0; /* Trải rộng khắp màn hình */
-    background: rgba(0, 0, 0, 0.9); /* Nền đen trong suốt 90% */
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
     justify-content: center;
     align-items: center;
     
-    /* Mặc định tàng hình và không thể bấm vào */
     opacity: 0;
     visibility: hidden;
     z-index: 2000;
     transition: all 0.3s ease;
 }
 
-/* PHÉP THUẬT Ở ĐÂY: Hiện lên khi URL có #id tương ứng */
 .lightbox:target {
     opacity: 1;
     visibility: visible;
 }
 
-/* Nút tắt (Dấu X) */
 .lightbox-close {
     position: absolute;
     top: 30px;
@@ -104,26 +97,23 @@
 }
 
 .lightbox-close:hover {
-    color: var(--color-primary); /* Đổi màu khi trỏ chuột vào nút X */
+    color: var(--color-primary);
 }
 
-/* Kích thước ảnh to bên trong Lightbox */
+
 .lightbox img {
     max-width: 90%;
-    max-height: 80vh; /* Không cao vượt quá 80% chiều cao màn hình */
+    max-height: 80vh;
     border-radius: 8px;
-    box-shadow: 0 5px 25px rgba(0,0,0,0.5); /* Đổ bóng cho ảnh */
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5); 
 }
 
-/* ========================================== */
-/* TỐI ƯU GIAO DIỆN ĐIỆN THOẠI (MOBILE) */
-/* ========================================== */
 @media (max-width: 768px) {
     .portfolio-grid {
-        grid-template-columns: 1fr; /* Ép về 1 cột duy nhất */
+        grid-template-columns: 1fr;
     }
     
     .portfolio-filters {
-        flex-wrap: wrap; /* Cho phép các nút lọc rớt xuống dòng nếu thiếu chỗ */
+        flex-wrap: wrap;
     }
 }
