@@ -68,8 +68,13 @@
 }
 .lightbox {
     position: fixed;
+<<<<<<< HEAD
     inset: 0; 
     background: rgba(0, 0, 0, 0.9); 
+=======
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+>>>>>>> b74dc7c57959cb82ffb7e68eb4539e4b7120a114
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,7 +85,10 @@
     transition: all 0.3s ease;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> b74dc7c57959cb82ffb7e68eb4539e4b7120a114
 .lightbox:target {
     opacity: 1;
     visibility: visible;
@@ -106,7 +114,11 @@
     max-width: 90%;
     max-height: 80vh;
     border-radius: 8px;
+<<<<<<< HEAD
     box-shadow: 0 5px 25px rgba(0,0,0,0.5);
+=======
+    box-shadow: 0 5px 25px rgba(0,0,0,0.5); 
+>>>>>>> b74dc7c57959cb82ffb7e68eb4539e4b7120a114
 }
 
 @media (max-width: 768px) {
