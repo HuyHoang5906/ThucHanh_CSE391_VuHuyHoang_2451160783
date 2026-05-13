@@ -60,6 +60,7 @@
     .skills-grid {
         grid-template-columns: 1fr;
     }
+}
 @media (max-width: 768px) {
     .skills-grid {
         grid-template-columns: 1fr;
@@ -68,5 +69,5 @@
 
     .skill-item {
         padding: 1.2rem 1.5rem;
+        }
     }
-}

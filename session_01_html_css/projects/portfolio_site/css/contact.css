@@ -72,15 +72,16 @@ footer {
     .contact-grid {
         grid-template-columns: 1fr;
         padding: 1.5rem;
-    }
+        }
     
     .contact-info {
         text-align: center;
         margin-bottom: 2rem;
-    }
+        }
     
     .info-list li {
         display: inline-block;
         margin: 0.5rem 1rem;
+        }
     }
 }
