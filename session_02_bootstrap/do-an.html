@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý Đồ Án Sinh Viên - Huy Hoàng</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/custom-theme.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container">
+            <a class="navbar-brand fs-4" href="#">Quản lý Đồ Án Sinh Viên</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3">
+                    <li class="nav-item"><a class="nav-link" href="#">TrangChủ</a></li>
+                    <li class="nav-item"><a class="nav-link active fw-bold" href="#">ĐồÁn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">ThốngKê</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <span class="small fw-bold">EN | VI</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4 text-center">
+        <div class="banner-welcome py-2 rounded-2 shadow-sm d-inline-block px-5">
+            <h2 class="mb-0 text-white fw-normal">Chào mừng đến với Đồ án tốt nghiệp</h2>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-4">
+                <div class="card border shadow-sm py-4 h-100">
+                    <h4 class="fw-bold">Tổng số Đồ án</h4>
+                    <p class="fs-5 mb-0">228</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border shadow-sm py-4 h-100">
+                    <h4 class="fw-bold">Hoàn thành</h4>
+                    <p class="fs-5 mb-0">213</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card border shadow-sm py-4 h-100">
+                    <h4 class="fw-bold">Đang làm</h4>
+                    <p class="fs-5 mb-0">15</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="input-group" style="max-width: 450px;">
+                <input type="text" class="form-control rounded-start-1" placeholder="Filter by student or title...">
+                <button class="btn btn-outline-secondary px-3" type="button">Lọc</button>
+            </div>
+            <button class="btn btn-primary px-3 rounded-1 fw-medium" data-bs-toggle="modal" data-bs-target="#modalDoAn">Thêm Đồ án</button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle mb-0 text-center">
+                <thead class="table-light">
+                    <tr>
+                        <th class="fw-bold">#</th>
+                        <th class="fw-bold">Tiêu đề</th>
+                        <th class="fw-bold">Sinh viên</th>
+                        <th class="fw-bold">Email</th>
+                        <th class="fw-bold">Điện thoại</th>
+                        <th class="fw-bold">Giảng viên HD</th>
+                        <th class="fw-bold">Thao tác</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>AI Chatbot</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>a@example.com</td>
+                        <td>0123456789</td>
+                        <td>TS. Trần B</td>
+                        <td>
+                            <button class="btn btn-secondary btn-sm px-2 py-0">Sửa</button>
+                            <button class="btn btn-danger btn-sm px-2 py-0">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Web GIS</td>
+                        <td>Trần Thị C</td>
+                        <td>c@example.com</td>
+                        <td>0987654321</td>
+                        <td>ThS. Lê D</td>
+                        <td>
+                            <button class="btn btn-secondary btn-sm px-2 py-0">Sửa</button>
+                            <button class="btn btn-danger btn-sm px-2 py-0">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Mobile App</td>
+                        <td>Phạm Văn E</td>
+                        <td>e@example.com</td>
+                        <td>0912345678</td>
+                        <td>TS. Hoàng F</td>
+                        <td>
+                            <button class="btn btn-secondary btn-sm px-2 py-0">Sửa</button>
+                            <button class="btn btn-danger btn-sm px-2 py-0">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>IoT Smart Home</td>
+                        <td>Đặng Thị G</td>
+                        <td>g@example.com</td>
+                        <td>0901234567</td>
+                        <td>ThS. Nguyễn H</td>
+                        <td>
+                            <button class="btn btn-secondary btn-sm px-2 py-0">Sửa</button>
+                            <button class="btn btn-danger btn-sm px-2 py-0">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Data Mining</td>
+                        <td>Vũ Văn I</td>
+                        <td>i@example.com</td>
+                        <td>0998765432</td>
+                        <td>TS. Phan J</td>
+                        <td>
+                            <button class="btn btn-secondary btn-sm px-2 py-0">Sửa</button>
+                            <button class="btn btn-danger btn-sm px-2 py-0">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDoAn" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content rounded-1">
+                <div class="modal-header border-bottom">
+                    <h5 class="modal-title fw-bold">Thêm/Sửa Đồ án</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body px-4">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Tiêu đề Đồ án</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Tên Sinh viên</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Điện thoại</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Mật khẩu</label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Giảng viên HD</label>
+                            <select class="form-select">
+                                <option>TS. Trần B</option>
+                                <option>ThS. Lê D</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer border-top-0 d-flex justify-content-end gap-2">
+                    <button type="button" class="btn btn-secondary px-3" data-bs-dismiss="modal">Đóng</button>
+                    <button type="button" class="btn btn-primary px-3">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

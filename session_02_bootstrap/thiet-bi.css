@@ -1,0 +1,43 @@
+body {
+    background-color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header-bar {
+    background-color: #f1f3f5;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.search-box {
+    width: 350px;
+}
+
+.device-card {
+    transition: all 0.3s ease;
+    border: 1px solid #e9ecef;
+}
+
+.device-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08) !important;
+}
+
+.btn-action {
+    background-color: #f8f9fa;
+    color: #333;
+    min-width: 60px;
+}
+
+.btn-action:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.modal-header .btn-close {
+    font-size: 0.8rem;
+}
+
+.form-label {
+    margin-bottom: 0.3rem;
+    color: #333;
+}
